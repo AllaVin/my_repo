@@ -1,0 +1,16 @@
+  997  git branch -r
+  998  git remote -v
+  999  git fetch --all
+ 1000  exit
+ 1001  cd git_repositories
+ 1002  ls -la
+ 1003  cd my_repo
+ 1004  ls -la
+ 1005  git status
+ 1006  git checkout main
+ 1007  git merge feature
+ 1008  git checkout feature -- .
+ 1009  git add .
+ 1010  git commit -m "Manually merged unrelated histories from feature"
+ 1011  git merge feature --allow-unrelated-histories
+ 1012  git merge feature
